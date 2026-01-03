@@ -1,4 +1,4 @@
-# MiniLedger
+# Ledger
 
 MiniLedger is a simple payment and double-entry ledger demo. It tracks accounts, records payments between them, and keeps balances in sync using basic double-entry accounting rules.
 
