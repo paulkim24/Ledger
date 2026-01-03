@@ -140,7 +140,4 @@ Each payment creates corresponding ledger entries to keep accounts balanced.
   - Import/export of transactions
   - Real-time updates via WebSockets
 
-## License
-
-MIT
 
