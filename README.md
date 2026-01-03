@@ -139,4 +139,3 @@ Each payment creates corresponding ledger entries to keep accounts balanced.
   - Categories and reports
   - Import/export of transactions
   - Real-time updates via WebSockets
-
