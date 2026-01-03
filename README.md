@@ -1,6 +1,6 @@
-# MiniLedger
+# Ledger
 
-MiniLedger is a simple payment and double-entry ledger demo. It tracks accounts, records payments between them, and keeps balances in sync using basic double-entry accounting rules.
+Ledger is a simple payment and double-entry ledger demo. It tracks accounts, records payments between them, and keeps balances in sync using basic double-entry accounting rules.
 
 ## Features
 
@@ -62,7 +62,7 @@ docker run --name ledger-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d 
 ### Create database
 
 ```bash
-docker exec -it ledger-postgres psql -U postgres -c "CREATE DATABASE miniledger;"
+docker exec -it ledger-postgres psql -U postgres -c "CREATE DATABASE ledger;"
 ```
 
 ### Apply schema
@@ -71,7 +71,7 @@ From the backend folder (where schema.sql lives):
 
 ```bash
 cd backend
-type schema.sql | docker exec -i ledger-postgres psql -U postgres -d miniledger
+type schema.sql | docker exec -i ledger-postgres psql -U postgres -d ledger
 ```
 
 ### Configure environment
@@ -83,7 +83,7 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
 DB_PASSWORD=postgres
-DB_NAME=miniledger
+DB_NAME=ledger
 ```
 
 ### Install frontend dependencies
@@ -139,8 +139,4 @@ Each payment creates corresponding ledger entries to keep accounts balanced.
   - Categories and reports
   - Import/export of transactions
   - Real-time updates via WebSockets
-
-## License
-
-MIT
 
